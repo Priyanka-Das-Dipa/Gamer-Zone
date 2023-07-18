@@ -93,9 +93,11 @@ span{
     display: flex;
     justify-content: center;
     gap: 24px;
-    text-align: center;
-    
-    
+    text-align: center;  
+}
+.fa-brands{
+    font-size: 20px;
+    padding: 10px;
 }
 .sign-in{
     width: 180px;
@@ -121,11 +123,6 @@ span{
     border-radius: 48px;
     background:#4EC5F7;
 }
-/* Main Section */
-main{
-    margin-left: 240px;
-    margin-right: 240px;
-}
 
 /* Online Games Funny Game Section */
 .online-game{
@@ -146,10 +143,7 @@ main{
     margin-bottom: 45px;
 }
 .common-color{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #F948B2;
 }
 .card-content{
     display: flex;
@@ -160,6 +154,13 @@ main{
 .card{
     margin-bottom: 24px;
     /* border: 1px solid red; */
+}
+.card img:hover{
+    border: 7px solid #F948B2;
+    border-radius: 15px;
+    background: transparent rgb(115, 115, 162);
+    
+
 }
 .card img{
     width: 342px;
@@ -172,13 +173,78 @@ main{
     font-weight: 500;
 }
 
+/* Play Instantly */
+
+.play-instantly{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    margin-top: 100px;
+}
+.play-instantly h3{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.play-instantly p{
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+.play-contant span{
+    background-image: linear-gradient(to bottom, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    color: transparent;
+}
+.fary-girl-pic{
+    position: absolute;
+    margin-top: -150px;
+    margin-right: -170px;
+    margin-left: -115px;
+}
+
+/* Icon Section */
+.icon{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.icon-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    margin: 5px;
+}
+.icon-btn button{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: white;
+    width: 250px;
+    height: 80px;
+    border: 0px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.icon-btn button:hover{
+    border: 2px solid #FF42A5;
+    color: #FF42A5;
+}
+.icon-btn p{
+    padding: 20px 25px;
+}
+
 
 /* Mobile Screen Style */
 
 @media screen and (max-width: 576px) {
-    .navbar{
-        margin: 20px;
-    }
     .navbar, ul, .banner{
         width: 100%;
         flex-direction: column;
@@ -195,7 +261,7 @@ main{
         width: 70%;
         text-align: center;
         margin-bottom: 10px;
-        margin: 50px;
+        /* margin: 50px; */
         padding: 20px;
     }
     .banner h1{
@@ -203,8 +269,9 @@ main{
         margin-bottom: 10px;
     }
     .banner-img img, .banner-img{
-        width: 100%;
-        margin: 20px;
+        width: 90%;
+        text-align: center;
+        /* margin: 20px; */
     }
     .sign-in, .go-rogue{
         font-size: 15px;
@@ -215,11 +282,25 @@ main{
         align-items: center;
         text-align: center;
     }
-    .card-content{
+    .card-content, .play-instantly{
         flex-direction: column;
         align-items: center;
     }
     .online-game h3, p{
         width: auto;
+        text-align: center;
+        margin-top: 10px;
+        padding-left: 10px;
+        /* margin-left: 15px; */
     }
+    .play-img{
+        width: 50%;  
+    }
+    .icon{
+        max-width: 100%;
+    }
+
+
+
+
 }
