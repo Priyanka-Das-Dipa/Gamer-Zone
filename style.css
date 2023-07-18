@@ -87,11 +87,37 @@ span{
     height: 550px;
     padding: 20px;
 }
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+    
+    
+}
 .sign-in{
-
+    width: 180px;
+    height: 50px;
+    padding: 20px 20px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0px;
+    border-radius: 48px;
+    background:#FF42A5;
+    align-items: center;
+   
 }
 .go-rogue{
-    
+    width: 180px;
+    height: 50px;
+    padding: 20px 20px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0px;
+    border-radius: 48px;
+    background:#4EC5F7;
 }
 
 
@@ -128,6 +154,10 @@ span{
     .banner-img img, .banner-img{
         width: 100%;
         margin: 20px;
+    }
+    .sign-in, .go-rogue{
+        font-size: 15px;
+        font-weight: 600;
     }
 
 }
