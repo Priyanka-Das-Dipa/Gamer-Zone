@@ -17,6 +17,7 @@
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding: 0;
 }
 .navbar a{
     text-decoration: none; 
@@ -48,9 +49,10 @@ span{
     background-image: url('images/Group\ 14.png');
     background-position: center;
     background-size: cover;
+    padding: 50px 10px;
     width: 600px;
-    position: relative;
-    padding: 150px;
+
+    /* position: relative; */
     text-align: center;
 }
 .banner{
@@ -89,7 +91,6 @@ span{
 .banner-img img{
     width: 600px;
     height: 550px;
-    padding: 20px;
 }
 .btn{
     display: flex;
