@@ -127,6 +127,7 @@ span{
 /* Online Games Funny Game Section */
 .online-game{
     margin: 80px;
+    text-align: left;
 }
 .online-game h3{
     color: #0B0223;
@@ -158,9 +159,7 @@ span{
 .card img:hover{
     border: 7px solid #F948B2;
     border-radius: 15px;
-    background: transparent rgb(115, 115, 162);
     
-
 }
 .card img{
     width: 342px;
@@ -202,7 +201,7 @@ span{
 .fary-girl-pic{
     position: absolute;
     margin-top: -150px;
-    margin-right: -170px;
+    /* margin-right: -170px; */
     margin-left: -115px;
 }
 
@@ -241,6 +240,45 @@ span{
     padding: 20px 25px;
 }
 
+/* Footer Section */
+
+.footer{
+    background: #0B0223;
+    padding: 60px 0px; 
+}
+.footer h3{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.footer-para{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px; 
+}
+.footer-logo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer-p, .copyright{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
 
 /* Mobile Screen Style */
 
@@ -252,13 +290,12 @@ span{
     }
     .banner{
         flex-direction: column-reverse;
-        /* margin: auto 50px; */
     }
     .navbar ul li{
         margin: 10px;
     }
     .banner-contant{
-        width: 70%;
+        width: 100%;
         text-align: center;
         margin-bottom: 10px;
         /* margin: 50px; */
@@ -287,20 +324,24 @@ span{
         align-items: center;
     }
     .online-game h3, p{
-        width: auto;
+        width: 100%;
         text-align: center;
         margin-top: 10px;
-        padding-left: 10px;
-        /* margin-left: 15px; */
+        /* padding-left: 10px; */
     }
-    .play-img{
-        width: 50%;  
+    .footer{
+        width:100%;
     }
-    .icon{
-        max-width: 100%;
+    .footer-para, .footer-logo{
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 30px;
     }
-
-
-
+    .footer-p{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px;
+    }
 
 }
