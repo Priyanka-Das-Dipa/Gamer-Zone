@@ -46,6 +46,8 @@ span{
 /* Banner Section */
 .banner-contant{
     background-image: url('images/Group\ 14.png');
+    background-position: center;
+    background-size: cover;
     width: 600px;
     position: relative;
     padding: 150px;
