@@ -402,9 +402,21 @@ span{
         left: -90px;
         margin-left: 60px;
     }
+    .play-instantly{
+        gap: 100px;
+        padding: 0px 20px;
+    }
     .play-contant h3, .play-instantly p{
         text-align: center;
     }
+    .play-instantly h3{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .play-instantly{
+        font-size: 15px;
+    }
+    
     .icon-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
