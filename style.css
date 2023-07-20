@@ -5,10 +5,12 @@
 /* Header Section */
 .navbar{
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-between; 
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .navbar ul{
     list-style: none;
@@ -49,27 +51,22 @@ span{
     background-image: url('images/Group\ 14.png');
     background-position: center;
     background-size: cover;
-    padding: 50px 10px;
+    padding: 80px 40px;
     width: 700px;
-    /* position: relative; */
-    text-align: center;
 }
 .banner{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     gap: 35px;
 }
 .banner h3{
     color: #0B0223;
-    text-align: center;
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 .banner h1{
-    text-align: center;
     font-size: 95px;
     font-weight: 800;
     text-transform: uppercase;
@@ -81,21 +78,23 @@ span{
 }
 .paragraph{
     color: #534C64;
-    text-align: center;
     font-size: 20px;
     font-weight: 500;
     text-transform: lowercase;
     margin-bottom: 15px;
 }
+.paragraph > p {
+    margin-bottom: 20px;
+}
+
 .banner-img img{
     width: 600px;
     height: 550px;
 }
 .btn{
     display: flex;
-    justify-content: center;
     gap: 24px;
-    text-align: center;  
+    margin-top: 40px;
 }
 .fa-brands{
     font-size: 20px;
@@ -154,8 +153,6 @@ span{
     justify-content: center;
     gap: 24px;
     margin-bottom: 20px;
-    /* padding-left:  240px;
-    padding-right: 240px; */
 }
 .img-container{
     position: relative;
@@ -330,7 +327,10 @@ span{
     main, footer{
         width: 100%;
     }
-    .navbar, ul, .banner{
+    .navbar {
+        display: block;
+    }
+    ul, .banner{
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -342,9 +342,9 @@ span{
         margin: 10px;
     }
     .banner-contant{
-        background-position: center;
-        background-size: cover;
-        width: auto;
+        width: 300px;
+        padding: 50px 60px;
+        margin-bottom: 30px;
     }
     .banner h1{
         font-size: 50px;
@@ -352,6 +352,12 @@ span{
     }
     .banner-img img{
         width: 100%;
+    }
+    .paragraph {
+        margin-top: 40px;
+    }
+    .paragraph > p {
+        text-align: left;
     }
 
     .banner-img{
@@ -398,13 +404,33 @@ span{
     }
     .play-contant h3, .play-instantly p{
         text-align: center;
-        
     }
-
+    .icon-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+    .icon-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon-btn > button {
+        width: 200px;
+    height: 50px;
+        font-size: 12px;
+    }
+    .icon-btn > button > img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
 }
 
 
 /* For Tablet Screen */
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
    
     .navbar{
@@ -418,17 +444,32 @@ span{
         justify-content: center;
         background-position: center;
     }
+    .banner-contant{
+        width: 600px;
+        padding: 50px 60px;
+        margin-bottom: 30px;
+    }
     .card-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .play-instantly{
         flex-direction: column;
+        align-items: center;
+    }
+    .play-instantly h3, .play-instantly p{
+        text-align: center;
     }
     .play-img{
         padding-left: 50px;
     }
     .icon, footer{
         width: 100%;
+    }
+    .footer-para{
+        gap: 30px;
+    }
+    .footer{
+        padding: 30px;
     }
 }
