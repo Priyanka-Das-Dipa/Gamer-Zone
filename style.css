@@ -51,7 +51,7 @@ span{
     background-image: url('images/Group\ 14.png');
     background-position: center;
     background-size: cover;
-    padding: 80px 40px;
+    padding: 80px 80px;
     width: 700px;
 }
 .banner{
@@ -208,8 +208,8 @@ span{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 150px;
-    padding: 0px 180px;
+    gap: 180px;
+    padding: 0px 80px;
 }
 .play-contant{
     text-align: center;
